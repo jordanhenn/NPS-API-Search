@@ -41,7 +41,7 @@ function displayParks(responseJson) {
     for (let i = 0; i < responseJson.data.length; i++){
         $('.js-results').append(
             `<li>
-            <h3 class="parkname"><a href="${responseJson.data[i].url}">${responseJson.data[i].name}</a></h3>
+            <h3 class="parkname"><a target="_blank" href="${responseJson.data[i].url}">${responseJson.data[i].name}</a></h3>
             <p class="description">Description: ${responseJson.data[i].description}</p>
             <div class="address">
                 <p>Address:</p>
